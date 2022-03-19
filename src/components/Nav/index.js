@@ -17,16 +17,16 @@ const categories = [
 
 function Nav() {
     return (
-        <header data-testid="header" className="flex-row px-1">
+        <header className="flex-row px-1">
       <h2>
-        <a href="/">
-          <span role="img" aria-label="camera"> 📸</span> Oh Snap!
+        <a data-testid="link" href="/">
+          <span role="img" aria-label="camera"> 📸</span> Oh snap!
         </a>
       </h2>
       <nav>
         <ul className="flex-row">
           <li className="mx-2">
-            <a href="#about" onClick={() => handleClick()}>
+            <a data-testid="about" href="#about" onClick={() => handleClick()}>
               About me
             </a>
           </li>
